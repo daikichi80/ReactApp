@@ -1,5 +1,7 @@
 import React from 'react';
-import Article from './Article'
+import Article from './Article';
+import * as Foobar from './components/Foobar'; //ここは相対パス
+import Hoge from './components/hoge';
 
 class Blog extends React.Component{
   constructor(props) {
@@ -49,7 +51,9 @@ class Blog extends React.Component{
           count={this.state.count}
           countUp ={()=>{this.countUp()}}
         />
-
+        <Foobar.Foo />
+        <Foobar.Bar />
+        <Hoge />
       </>
     )
   }
