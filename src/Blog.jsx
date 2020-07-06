@@ -11,7 +11,7 @@ class Blog extends React.Component{
   }
 
   componentDidMount() {
-    //ボタンがクリックされたらいいねをカウントアップする
+    //ボタンクリックされたらいいねをカウントアップする
   document.getElementById('counter').addEventListener('click',this.countUp)
 }
 
